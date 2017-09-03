@@ -1,0 +1,20 @@
+/*Home page style sheet*/
+.footer-copyright{
+	/*height: 30px;*/
+	/*width: 50px;*/
+	background: #f8f8f8;
+	padding: 10px;
+}
+
+.navbar{
+	margin: 0px;
+}
+
+/*Side_nav*/
+.side_nav{
+	background: black;
+}
+
+.col-padding{
+	padding: 0px;
+}

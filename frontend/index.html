@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="crawler" >
+<head>
+	<meta charset="UTF-8">
+	<title>{{title}}</title>
+</head>
+
+<!-- Dependencies -->
+<script src="./node_modules/angular/angular.js"></script>
+<script src="./scripts/jquery-3.2.1.min.js"></script>
+<script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+<script src="./node_modules/angular-ui-bootstrap/dist/ui-bootstrap.js"></script>
+<script src="./node_modules/angular-ui-router/release/angular-ui-router.js"></script>
+
+<!-- Style Sheets -->
+<link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+<link rel="stylesheet" href="./css/home.css">
+
+<!-- Controllers -->
+<script src="./scripts/app.js"></script>
+<script src="./scripts/HomeController.js"></script>
+
+<body>
+	
+	<!-- Navbar -->
+	<nav class="navbar navbar-default">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <a class="navbar-brand" href="#">WebSiteName</a>
+	    </div>
+	    <ul class="nav navbar-nav">
+	      <li class="active"><a href="#">Home</a></li>
+	      <li><a href="#">Page 1</a></li>
+	      <li><a href="#">Page 2</a></li>
+	      <li><a href="#">Page 3</a></li>
+	    </ul>
+	  </div>
+	</nav>
+
+	<!-- Side nav -->
+	<div class="col-md-3 col-padding">
+		<div class="side_nav">
+			as
+		</div>
+	</div>
+
+	<!-- Main view -->
+	<div class="col-md-8 col-padding">	
+		<div ui-view="main">
+
+		</div>
+	</div>
+	
+	<!-- Footer -->
+	<footer>
+		<div class="footer-copyright">
+			<center>
+				<div class="container-fluid">
+		            2015 Copyright
+		        </div>
+			</center>	
+	        
+	    </div>
+	    
+	</footer>
+</body>
+</html>
