@@ -1,11 +1,4 @@
 /*Home page style sheet*/
-.footer-copyright{
-	/*height: 30px;*/
-	/*width: 50px;*/
-	background: #f8f8f8;
-	padding: 10px;
-}
-
 .navbar{
 	margin: 0px;
 }
@@ -15,6 +8,14 @@
 	background: black;
 }
 
-.col-padding{
+.zero-padding{
 	padding: 0px;
+}
+
+/*Footer*/
+.footer-copyright{
+	/*height: 30px;*/
+	/*width: 50px;*/
+	background: #f8f8f8;
+	padding: 10px;
 }
