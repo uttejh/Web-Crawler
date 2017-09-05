@@ -1,7 +1,103 @@
 <!-- Side nav -->
 <div class="col-md-3 zero-padding">
 	<div class="side_nav">
-		as
+		<div class="container">
+
+			<!-- Search by name -->
+			<form class="form-inline">
+		      <input class="form-control" type="text" placeholder="Search by Name" style="margin-right: 4px;">
+		      <button class="btn btn-outline-primary" type="submit">Search</button>
+		    </form>
+
+		    <!-- or divider -->
+			<div class="col-md-12 or-container">
+				<hr class="or-hr">
+				<div class="or">OR</div>
+			</div>
+
+			<!-- Filters -->
+			<form>	
+				<center>
+					<label for="filters" style="color: #0275d8;padding-bottom: 5px;">
+						<i class="fa fa-sliders fa-lg" aria-hidden="true" ></i>
+						Filters
+					</label>
+				</center>
+				
+				<!-- Brand -->
+				<div class="col-md-12 form-inline filter_padding">
+					<div class="col-md-3 zero-padding white-label">
+						Brand :
+					</div>
+					<select class="custom-select col-md-9">
+					  <option selected disabled>Choose a Brand</option>
+					  <option value="1">One</option>
+					  <option value="2">Two</option>
+					  <option value="3">Three</option>
+					</select>
+				</div>
+
+				<!-- Price -->
+				<div class="col-md-12 form-inline filter_padding" >
+					<div class="col-md-2 zero-padding white-label">
+						PRICE:
+					</div>
+					<div class="col-md-10">
+						<div class="form-group">
+					        <rzslider class="custom-slider"
+					          rz-slider-model="PriceSlider.minValue"
+					          rz-slider-high="PriceSlider.maxValue"
+					          rz-slider-options="PriceSlider.options">
+					          	
+					        </rzslider>
+					    </div>
+					</div>					
+				</div>
+
+
+				<div class="col-md-12 form-inline filter_padding">
+					<div class="col-md-3 zero-padding white-label">
+						RAM :
+					</div>
+					<select class="custom-select col-md-9">
+					  <option selected disabled>Choose RAM</option>
+					  <option value="1">One</option>
+					  <option value="2">Two</option>
+					  <option value="3">Three</option>
+					</select>
+				</div>
+				<div class="col-md-12 form-inline filter_padding">
+					<div class="col-md-3 zero-padding white-label">
+						Memory :
+					</div>
+					<select class="custom-select col-md-9">
+					  <option selected disabled>Choose Internal Memory</option>
+					  <option value="1">One</option>
+					  <option value="2">Two</option>
+					  <option value="3">Three</option>
+					</select>
+				</div>
+
+				<div class="col-md-12 form-inline filter_padding white-label" >
+					<div class="col-md-2 zero-padding price-label">
+						Rating:
+					</div>
+					<div class="col-md-10">
+						<div class="form-group">
+					        <rzslider rz-slider-model="RatingSlider.value"
+         					 rz-slider-options="RatingSlider.options"></rzslider>
+					          	
+					        </rzslider>
+					    </div>
+					</div>					
+				</div>
+				
+				<div class="col-md-12 form-inline filter_padding">
+		      		<button class="btn btn-outline-success col-md-12" type="submit">Submit</button>
+					
+				</div>
+			</form>
+		</div>
 	</div>
 </div>
 <div class="col-md-9 zero-padding">	

@@ -6,10 +6,40 @@
 /*Side_nav*/
 .side_nav{
 	background: black;
+	padding-top: 10px;
 }
 
 .zero-padding{
 	padding: 0px;
+}
+
+.filter_padding{
+	padding: 15px 0px 10px 0px;
+	/*margin-top: 10px;*/
+}
+.or-container{
+	text-align: center;
+    margin: 0;
+    /*margin-bottom: 10px;
+    clear: both;*/
+    color: white;
+}
+.or-hr{
+	margin-bottom: 0;
+    position: relative;
+    top: 17px;
+    /*height: 0;
+    border: 0;*/
+    border-top: 1px solid #1b79d8;
+}
+.or{
+	display: inline-block;
+    position: relative;
+    padding: 5px;
+    background-color: black;
+}
+.white-label{
+	color: white;
 }
 
 /*Footer*/
@@ -17,5 +47,9 @@
 	/*height: 30px;*/
 	/*width: 50px;*/
 	background: #f8f8f8;
+	padding: 10px;
+}
+
+.viewmore{
 	padding: 10px;
 }
