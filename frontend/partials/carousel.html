@@ -1,0 +1,40 @@
+      <div style="height: 540px">
+        <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
+          <div class="form-group" style="position:absolute;z-index:9999999;padding-top: 20px;">    
+            <div class="container">
+                <div class="">
+                  <div class="col-md-2">
+                        <input type="text" class="form-control input-lg" placeholder="Add Device">  
+                    </div>
+                    <div class="col-md-2">
+                        <input type="text" class="form-control input-lg" placeholder="Add Device">  
+                           
+                    </div>
+                    <div class="col-md-2">
+                        <input type="text" class="form-control input-lg" placeholder="Add Device">  
+                                    
+                    </div>
+                    <div class="col-md-2">
+                        <input type="text" class="form-control input-lg" placeholder="Add Device">  
+                        
+                    </div>
+                    <div class="col-md-12" style="position: relative;left: 28%;padding: 15px;">
+                      <!-- <center> -->
+                        <div class="btn btn-primary">
+                          <i class="fa fa-balance-scale" aria-hidden="true"></i>
+                          Compare
+                        </div>
+                      <!-- </center> -->
+                    </div>
+                  </div>
+              </div>
+          </div>
+        <div uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id" >
+          <img ng-src="{{slide.image}}" style="margin:auto;" >
+          <div class="carousel-caption">
+            <h4>Slide {{slide.id}}</h4>
+            <p>{{slide.text}}</p>
+          </div>
+        </div>
+      </div>
+    </div>

@@ -8,53 +8,63 @@
 <!-- Dependencies -->
 <script src="./node_modules/angular/angular.js"></script>
 <script src="./scripts/jquery-3.2.1.min.js"></script>
+<!-- <script src="./node_modules/tether/dist/js/tether.js"></script> -->
 <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
 <script src="./node_modules/angular-ui-bootstrap/dist/ui-bootstrap.js"></script>
+<script src="./node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js"></script>
 <script src="./node_modules/angular-ui-router/release/angular-ui-router.js"></script>
 <script src="./node_modules/angularjs-slider/dist/rzslider.min.js"></script>
+<script src="./node_modules/angular-animate/angular-animate.js"></script>
+<script src="./node_modules/angular-sanitize/angular-sanitize.js"></script>
+
 
 <!-- Style Sheets -->
 <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
 <link rel="stylesheet" href="./css/home.css">
 <link rel="stylesheet" href="./css/font-awesome/css/font-awesome.css">
 <link rel="stylesheet" href="./node_modules/angularjs-slider/dist/rzslider.css">
+<link rel="stylesheet" href="./node_modules/tether/dist/css/tether.css">
 
 <!-- Controllers -->
 <script src="./scripts/app.js"></script>
 <script src="./scripts/HomeController.js"></script>
+<script src="./scripts/MobileFinderController.js"></script>
+<script src="./scripts/CarouselController.js"></script>
+<script src="./scripts/CompareController.js"></script>
 
 <body>
-	
-	<!-- Navbar -->
-	<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
-	  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-	    <span class="navbar-toggler-icon"></span>
-	  </button>
-	  <a class="navbar-brand" href="#">Navbar</a>
 
-	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-	    <ul class="navbar-nav mr-auto">
-	      <li class="nav-item active">
-	        <a class="nav-link" ui-sref="home">Home <span class="sr-only">(current)</span></a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link" ui-sref="MobileFinder">Mobile Finder</a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link" href="#">Compare</a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link" href="#">Best Deals</a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link" href="#">Contact us</a>
-	      </li>
-	    </ul>
-	    <form class="form-inline my-2 my-lg-0">
-	      <input class="form-control mr-sm-2" type="text" placeholder="Search">
-	      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-	    </form>
-	  </div>
+	<!-- Navbar -->
+	<nav class="navbar navbar-default">
+	  <div class="container-fluid">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" href="#">Brand</a>
+	    </div>
+
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav">
+	        <li class="active"><a ui-sref="home">Home <span class="sr-only">(current)</span></a></li>
+	        <li><a ui-sref="MobileFinder">Mobile Finder</a></li>
+	        <li><a ui-sref="Compare">Compare</a></li>
+	        <li><a ui-sref="home">Best Deals</a></li>
+	        <li><a ui-sref="home">Contact us</a></li>
+	      </ul>
+	      <form class="navbar-form navbar-right">
+	        <div class="form-group">
+	          <input type="text" class="form-control" placeholder="Search">
+	        </div>
+	        <button type="submit" class="btn btn-default">Submit</button>
+	      </form>
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
 	</nav>
 
 	<!-- Main view -->

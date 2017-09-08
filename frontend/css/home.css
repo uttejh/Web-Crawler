@@ -7,15 +7,26 @@
 .side_nav{
 	background: black;
 	padding-top: 10px;
+	padding-bottom: 20px;
 }
 
 .zero-padding{
 	padding: 0px;
 }
-
+.filters-pad{
+	padding: 10px;
+}
 .filter_padding{
 	padding: 15px 0px 10px 0px;
 	/*margin-top: 10px;*/
+}
+.filters-label{
+	color: #0275d8;
+	padding-bottom: 5px;
+}
+.submit-filters{
+	padding: 15px 0px 10px 0px;
+	margin-top: 7px;
 }
 .or-container{
 	text-align: center;
@@ -52,4 +63,10 @@
 
 .viewmore{
 	padding: 10px;
+}
+
+
+/*Compare*/
+.compare-main{
+	padding-top: 20px;
 }

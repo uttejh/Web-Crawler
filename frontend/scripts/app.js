@@ -1,4 +1,4 @@
-var app = angular.module("crawler",['ui.router','rzModule']);
+var app = angular.module("crawler",['ui.router','rzModule','ngAnimate','ui.bootstrap']);
 
 app.config(function($stateProvider,$urlRouterProvider){
 	$urlRouterProvider.otherwise("/home");
@@ -20,7 +20,21 @@ app.config(function($stateProvider,$urlRouterProvider){
 				"main":{
 					templateUrl:"partials/mobile_finder.html",
 					data:{title:"Mobile Finder"},
-					controller:"HomeController"
+					controller:"MobileFinderController"
+				}
+			}
+		})
+		.state('Compare',{
+			url:'/Compare',
+			views:{
+				"main":{
+					templateUrl:"partials/compare.html",
+					data:{title:"Compare"},
+					controller:"CarouselController"
+				},
+				"content@Compare":{
+					templateUrl:"partials/carousel.html",
+					controller:"CarouselController"
 				}
 			}
 		});
