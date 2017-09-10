@@ -37,13 +37,13 @@ def delete_file_contents(path):
 # Reads a file and converts file to a set
 def file_to_set(file_name):
 	results = set()
-	with open(file_name, 'rt') as 'f':
+	with open(file_name, 'rt') as f:
 		for line in f:
 			results.add(line.replace('\n',''))
 	return results
 
 # Appends a set of links to the file
-def set_to_file(links, files):
+def set_to_file(links, file):
 	delete_file_contents(file)
 	for link in sorted(links):
 		append_to_file(file, link)
