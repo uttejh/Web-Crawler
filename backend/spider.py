@@ -1,8 +1,7 @@
 from urllib.request import urlopen
 from link_finder import LinkFinder
+from domain import *
 from general import *
-import sys
-import pdb
 
 class Spider:
 
@@ -19,6 +18,7 @@ class Spider:
 		# Providing spider with all req info
 		Spider.project_name = project_name
 		Spider.base_url = base_url
+		Spider.domain_name = domain_name
 		Spider.queue_file = Spider.project_name + '/queue.txt'
 		Spider.crawled_file = Spider.project_name + '/crawled.txt'
 		self.boot()
@@ -59,11 +59,9 @@ class Spider:
 	@staticmethod
 	def add_links_to_queue(links):
 		for url in links:
-			if url in Spider.queue:
+			if(url in Spider.queue) or (url in Spider.crawled):
 				continue
-			if url in Spider.crawled:
-				continue
-			if Spider.domain_name not in url:
+			if Spider.domain_name != get_domain_name(url):
 				continue
 			Spider.queue.add(url)
 

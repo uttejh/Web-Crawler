@@ -1,13 +1,12 @@
 from html.parser import HTMLParser
 from urllib import parse
 
-class LinkFinder(object):
+class LinkFinder(HTMLParser):
 	"""docstring for LinkFinder"""
 	# def __init__(self, arg):
 	# 	super(LinkFinder, self).__init__()
 	# 	self.arg = arg
-
-	def __init__(self):
+	def __init__(self, base_url, page_url):
 		super().__init__()
 		self.base_url = base_url
 		self.page_url = page_url

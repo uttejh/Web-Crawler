@@ -26,7 +26,7 @@ def create_workers():
 def work():
 	while True:
 		url =queue.get()
-		Spider.crawl_page(threading.current_thread().name,url)
+		Spider.crawl_page(threading.current_thread().name, url)
 		queue.task_done()
 
 # Each queued link is a new job
